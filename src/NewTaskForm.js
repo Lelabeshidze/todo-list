@@ -1,4 +1,4 @@
-// 1
+
 import React, { useState } from 'react'
 import { useTasks } from './TaskProvider'
 
@@ -18,7 +18,7 @@ export default function NewTaskForm() {
     // 4
     <form onSubmit={submit}>
     
-      <input type="text" value={task} placeholder="Get some eggs..." onChange={e => setTask(e.target.value)} required />
+      <input type="text" value={task} placeholder="Add task" onChange={e => setTask(e.target.value)} required />
       <button>Add</button>
     </form>
   )
