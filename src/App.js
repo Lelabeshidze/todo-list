@@ -1,25 +1,25 @@
 import logo from './logo.svg';
 import './App.css';
+import '@fontsource/roboto/300.css';
+import '@fontsource/roboto/400.css';
+import '@fontsource/roboto/500.css';
+import '@fontsource/roboto/700.css';
+
+// 1
+import React from 'react'
+
+import NewTaskForm from './NewTaskForm'
+import TaskList from './TaskList'
 
 function App() {
+  // 2
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <h1 className="title">Todo List</h1>
+      <NewTaskForm />
+      <TaskList />
     </div>
-  );
+  )
 }
 
 export default App;
